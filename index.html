@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<title>بازی ریاضی</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>بازی ریاضی</h1>
+
+<div class="settings">
+
+<label>سختی:</label>
+<button onclick="setDifficulty('easy')">آسان</button>
+<button onclick="setDifficulty('medium')">متوسط</button>
+<button onclick="setDifficulty('hard')">سخت</button>
+
+<br><br>
+
+<label>تعداد سوال:</label>
+<input id="questionCount" type="number" value="10">
+
+<br><br>
+
+<label>زمان (ثانیه):</label>
+<input id="timeInput" type="number" value="60">
+
+<br><br>
+
+<button onclick="startGame()" class="start">شروع</button>
+<button onclick="aiNumbers()" class="ai">اعداد دلخواه AI</button>
+<button onclick="raceAI()" class="race">مسابقه با AI</button>
+
+</div>
+
+<h2 id="timer">زمان: 0</h2>
+
+<div id="question">...</div>
+
+<input id="answer" placeholder="پاسخ">
+
+<br>
+
+<button onclick="checkAnswer()">ثبت پاسخ</button>
+
+<p id="message"></p>
+
+<p id="report"></p>
+
+<hr>
+
+<h2>ماشین حساب</h2>
+
+<input id="calc" readonly>
+
+<div class="calculator">
+
+<button onclick="press('7')">7</button>
+<button onclick="press('8')">8</button>
+<button onclick="press('9')">9</button>
+<button onclick="press('/')">/</button>
+
+<button onclick="press('4')">4</button>
+<button onclick="press('5')">5</button>
+<button onclick="press('6')">6</button>
+<button onclick="press('*')">*</button>
+
+<button onclick="press('1')">1</button>
+<button onclick="press('2')">2</button>
+<button onclick="press('3')">3</button>
+<button onclick="press('-')">-</button>
+
+<button onclick="press('0')">0</button>
+<button onclick="calculate()">=</button>
+<button onclick="clearCalc()">C</button>
+<button onclick="press('+')">+</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

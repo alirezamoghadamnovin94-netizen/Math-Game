@@ -1,0 +1,62 @@
+body{
+    font-family:tahoma;
+    background:#1e40af;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    }
+    
+    .container{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    width:360px;
+    text-align:center;
+    }
+    
+    h1{
+    color:#1e40af;
+    }
+    
+    button{
+    padding:8px;
+    margin:4px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    }
+    
+    .start{
+    background:#dc2626;
+    color:white;
+    }
+    
+    .ai{
+    background:#2563eb;
+    color:white;
+    }
+    
+    .race{
+    background:#dc2626;
+    color:white;
+    }
+    
+    #question{
+    font-size:22px;
+    margin:15px;
+    color:#1e40af;
+    }
+    
+    .calculator{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:5px;
+    margin-top:10px;
+    }
+    
+    .calculator button{
+    background:#2563eb;
+    color:white;
+    }
+    
